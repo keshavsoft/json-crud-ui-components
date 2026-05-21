@@ -33,3 +33,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - html added with css
+
+## [1.5.2] - 2026-05-21
+
+### Added
+- all dynamic

@@ -10,6 +10,8 @@ const version = pkg.version;
 const run = async () => {
   const input = parseInput();
 
+  if (!input.cmd) return showUsage(version);
+
   if (input.action === "--help" || input.action === "-h" || input.action === "help") return showUsage(version);
 
   const command = resolveCommand(input.cmd);
