@@ -1,4 +1,4 @@
 const hookAllListeners = () => {
 };
 
-export { hookAllListeners };
+export default hookAllListeners;

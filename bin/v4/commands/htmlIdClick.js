@@ -7,8 +7,8 @@ import { announce } from "./htmlIdClick/steps/announce.js";
 import resolveFolderName from "./htmlIdClick/steps/resolveFolderName.js";
 import checks from "./addListeners/steps/checks.js";
 
-const defaultFolderName = "<htmlId>";
-const fileNameToCheck = "start.js";
+const defaultFolderName = "htmlId";
+const fileNameToCheck = "hookAllListeners.js";
 
 export default ({ folderName = "", toPath = process.cwd(), inAnnounce = true }) => {
     const fromChecks = checks({

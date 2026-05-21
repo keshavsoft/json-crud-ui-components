@@ -7,8 +7,15 @@ import { announce } from "./addListeners/steps/announce.js";
 import resolveFolderName from "./addListeners/steps/resolveFolderName.js";
 import checks from "./addListeners/steps/checks.js";
 
+const defaultFolderName = "AddListeners";
+const fileNameToCheck = "runAfterDomLoad.js";
+
 export default ({ folderName = "", toPath = process.cwd(), inAnnounce = true }) => {
-    const fromChecks = checks({ toPath, inAnnounce });
+    const fromChecks = checks({
+        toPath, inAnnounce,
+        inDefaultFolderName: defaultFolderName,
+        inFileNameToCheck: fileNameToCheck
+    });
 
     if (fromChecks) return false;
 
