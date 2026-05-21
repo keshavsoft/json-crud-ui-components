@@ -2,19 +2,14 @@ import path from "path";
 import fs from "fs";
 
 const validate = ({ toPath }) => {
-    const htmlPath = path.join(toPath, "index.html");
-    const indexPath = path.join(toPath, "index");
+    if (fs.existsSync(toPath)) {
 
-    if (!fs.existsSync(htmlPath)) {
-        console.log("index.html not found");
+        const files = fs.readdirSync(toPath);
 
-        return true;
-    };
-
-    if (fs.existsSync(indexPath)) {
-        console.log("index folder found");
-
-        return true;
+        if (files.length > 0) {
+            console.log("index folder should be empty");
+            return true;
+        };
     };
 
     return false;

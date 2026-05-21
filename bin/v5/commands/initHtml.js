@@ -1,5 +1,4 @@
 import { locateSource } from "./initHtml/steps/locateSource.js";
-import { locateDestination } from "./initHtml/steps/locateDestination.js";
 
 import { createProject } from "./initHtml/steps/createProject.js";
 import { announce } from "./initHtml/steps/announce.js";
@@ -17,7 +16,7 @@ export default ({ folderName = "", toPath = process.cwd(), inAnnounce = true }) 
     });
 
     const source = locateSource();
-    const destination = locateDestination({ inResolvedFolderName: resolvedFolderName });
+    const destination = resolvedFolderName;
 
     createProject({ source, destination });
 
