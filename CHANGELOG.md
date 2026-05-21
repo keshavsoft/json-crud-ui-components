@@ -28,3 +28,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - index pefect
+
+## [1.5.1] - 2026-05-21
+
+### Added
+- html added with css
