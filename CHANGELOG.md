@@ -38,3 +38,8 @@ The format is based on Keep a Changelog.
 
 ### Added
 - all dynamic
+
+## [1.6.2] - 2026-05-21
+
+### Added
+- test init good

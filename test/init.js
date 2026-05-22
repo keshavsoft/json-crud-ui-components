@@ -10,11 +10,13 @@ const load = async () => {
 
 const startFunc = async () => {
     const { default: run } = await load();
-  
+
     const folderName = process.argv[2];
+    const showLog = process.argv[3];
 
     run({
-        folderName
+        folderName,
+        showLog
     });
 };
 
