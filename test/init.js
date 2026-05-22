@@ -1,6 +1,6 @@
 import getLatestVersion from "../bin/core/getLatestVersion.js";
 
-const commandToSend = "simpleWithCrud";
+const commandToSend = "init";
 
 const load = async () => {
     const v = getLatestVersion();

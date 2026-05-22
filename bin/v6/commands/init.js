@@ -12,7 +12,10 @@ export default ({ folderName = "", toPath = process.cwd(), inAnnounce = true }) 
         name: folderName
     });
 
-    const fromChecks = checks({ toPath, inAnnounce, inFolderName });
+    const fromChecks = checks({
+        toPath, inAnnounce,
+        inFolderName: resolvedFolderName
+    });
 
     if (fromChecks) return false;
 
