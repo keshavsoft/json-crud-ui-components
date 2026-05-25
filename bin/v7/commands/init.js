@@ -13,8 +13,6 @@ export default ({
     inAnnounce = true,
     showLog = false
 }) => {
-    console.log("showLog : ", showLog);
-
     if (showLog) {
         console.log("Resolving folder name...");
     };
