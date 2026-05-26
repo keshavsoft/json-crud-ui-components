@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>json-crud-ui-components</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+            padding:40px;
+            line-height:1.7;
+        }
+
+        .container{
+            max-width:1200px;
+            margin:auto;
+        }
+
+        .hero{
+            text-align:center;
+            margin-bottom:50px;
+        }
+
+        .hero h1{
+            font-size:55px;
+            color:#38bdf8;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:20px;
+            color:#cbd5e1;
+            max-width:900px;
+            margin:auto;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:30px;
+            border-radius:20px;
+            margin-bottom:35px;
+            border:1px solid #334155;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+            border-color:#38bdf8;
+        }
+
+        h2{
+            color:#38bdf8;
+            margin-bottom:20px;
+            font-size:30px;
+        }
+
+        p{
+            color:#dbeafe;
+            margin-bottom:15px;
+        }
+
+        .code{
+            background:#020617;
+            padding:18px;
+            border-radius:12px;
+            margin-top:15px;
+            overflow:auto;
+            color:#4ade80;
+            font-size:16px;
+            border-left:5px solid #38bdf8;
+        }
+
+        .commands{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .command-box{
+            background:#111827;
+            padding:25px;
+            border-radius:18px;
+            border:1px solid #374151;
+        }
+
+        .command-box h3{
+            color:#4ade80;
+            margin-bottom:15px;
+            font-size:24px;
+        }
+
+        ul{
+            padding-left:20px;
+        }
+
+        li{
+            margin-bottom:10px;
+            color:#cbd5e1;
+        }
+
+        .footer{
+            text-align:center;
+            margin-top:60px;
+            color:#94a3b8;
+            font-size:15px;
+        }
+
+        .highlight{
+            color:#4ade80;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="hero">
+            <h1>json-crud-ui-components</h1>
+
+            <p>
+                A modern CLI-based CRUD UI component generator designed to rapidly create
+                reusable user interface structures, HTML templates, JavaScript modules,
+                listeners, headers, and dynamic CRUD operations for Express and JSON-based applications.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Overview</h2>
+
+            <p>
+                <span class="highlight">json-crud-ui-components</span> is a powerful command-line tool
+                that helps developers quickly generate frontend structures and reusable CRUD-based
+                UI components without manually writing repetitive boilerplate code.
+            </p>
+
+            <p>
+                This package works efficiently with modern JavaScript projects and allows
+                developers to initialize layouts, generate HTML structures, attach listeners,
+                build dynamic headers, and automate UI creation using simple terminal commands.
+            </p>
+
+            <div class="code">
+                npx json-crud-ui-components
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Installation</h2>
+
+            <p>
+                You can execute the package directly using NPX without globally installing it.
+                This helps developers quickly test and use the CLI tool instantly.
+            </p>
+
+            <div class="code">
+                npx json-crud-ui-components
+            </div>
+
+            <p style="margin-top:20px;">
+                Or install globally for faster access:
+            </p>
+
+            <div class="code">
+                npm install -g json-crud-ui-components
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Available Commands</h2>
+
+            <div class="commands">
+
+                <div class="command-box">
+                    <h3>init</h3>
+
+                    <p>
+                        Initializes the project structure and prepares required CRUD component files.
+                    </p>
+
+                    <div class="code">
+                        npx json-crud-ui-components init
+                    </div>
+                </div>
+
+                <div class="command-box">
+                    <h3>buildHeader</h3>
+
+                    <p>
+                        Automatically generates reusable header sections for CRUD UI pages.
+                    </p>
+
+                    <div class="code">
+                        npx json-crud-ui-components buildHeader
+                    </div>
+                </div>
+
+                <div class="command-box">
+                    <h3>addListeners</h3>
+
+                    <p>
+                        Adds JavaScript event listeners dynamically for buttons and CRUD actions.
+                    </p>
+
+                    <div class="code">
+                        npx json-crud-ui-components addListeners
+                    </div>
+                </div>
+
+                <div class="command-box">
+                    <h3>initHtml</h3>
+
+                    <p>
+                        Generates starter HTML templates for frontend CRUD interfaces.
+                    </p>
+
+                    <div class="code">
+                        npx json-crud-ui-components initHtml
+                    </div>
+                </div>
+
+                <div class="command-box">
+                    <h3>initJs</h3>
+
+                    <p>
+                        Creates JavaScript starter files and initializes frontend logic.
+                    </p>
+
+                    <div class="code">
+                        npx json-crud-ui-components initJs
+                    </div>
+                </div>
+
+                <div class="command-box">
+                    <h3>htmlIdClick</h3>
+
+                    <p>
+                        Automatically creates click handlers and DOM interaction utilities.
+                    </p>
+
+                    <div class="code">
+                        npx json-crud-ui-components htmlIdClick
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Features</h2>
+
+            <ul>
+                <li>Fast CRUD UI generation</li>
+                <li>Reusable HTML component templates</li>
+                <li>Automatic JavaScript listener generation</li>
+                <li>Express.js friendly architecture</li>
+                <li>Modern CLI workflow</li>
+                <li>Dynamic header generation</li>
+                <li>Reduced boilerplate coding</li>
+                <li>Simple NPX execution support</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Example Workflow</h2>
+
+            <p>
+                A developer can quickly initialize a CRUD project, generate HTML structures,
+                attach listeners, and prepare reusable UI components using only a few commands.
+            </p>
+
+            <div class="code">
+                npx json-crud-ui-components init
+
+                npx json-crud-ui-components initHtml
+
+                npx json-crud-ui-components addListeners
+            </div>
+        </div>
+
+        <div class="footer">
+            Built using Node.js, JavaScript, HTML, CSS, Express.js and CLI automation techniques.
+        </div>
+
+    </div>
+
+</body>
+</html>
