@@ -1,5 +1,5 @@
 import parseInput from "./core/parseInput.js";
-import showUsage from './core/showUsage.js';
+import showUsage from './core/showUsageV1.js';
 
 import resolveCommand from "./core/resolveCommand.js";
 
