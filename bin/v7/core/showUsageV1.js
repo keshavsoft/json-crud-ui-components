@@ -1,7 +1,10 @@
+
 import allVersions from "./getAllVersions.js";
+
 /*
 KSchema CLI – Dynamic Usage Renderer
 */
+
 export default function showUsage(version) {
     const g = "\x1b[32m";
     const y = "\x1b[33m";
@@ -17,15 +20,15 @@ export default function showUsage(version) {
 
     const exampleLines = Object.entries(allVersions)
         .map(([name]) =>
-            `  ${gray}npx json-crud-ui-components ${name}${r}`
+            `  ${gray}npx @keshavsoft/express-todo ${name}${r}`
         )
         .join("\n");
 
     console.log(`
-${c}🚀 JSON CRUD UI COMPONENTS v${version}${r}
+${c}🚀 express-todo v${version}${r}
 
 ${y}Usage:${r}
-  ${g}npx json-crud-ui-components${r} <command> [options]
+  ${g}npx @keshavsoft/express-todo${r} <command> [options]
 
 ${y}Commands:${r}
 ${commandLines}
@@ -34,6 +37,6 @@ ${y}Examples:${r}
 ${exampleLines}
 
 ${y}Tip:${r}
-  ${gray}npm i -g json-crud-ui-components${r}
+  ${gray}npm i -g @keshavsoft/express-todo${r}
 `);
 }
